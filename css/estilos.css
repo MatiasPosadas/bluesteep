@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -11,15 +11,28 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
+}
+:root {
+    --font-bold: 'Archivo Black', sans-serif;
     --blanco: #fff;
+    --amarillo: #fffb00;
+    --purpura: #7142de;
 }
 
 /*--------------*/
-/*-----HEADER----*/
+
+
+/*- - - - - H E A D E R - - -  -*/
 
 .header {
     width: 100%;
     height: 4rem;
+    position: fixed;
+    top: 0rem;
+    /* background-color: var(--blanco); */
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 1;
 }
 .header .nav {
     width: 100%;
@@ -27,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    background-color: palegreen;
+    /* background-color: palegreen; */
 }
 .header .nav .nav__logo {
     width: auto;
@@ -38,6 +51,10 @@ body {
 .header .nav .nav__logo img {
     height: 100%;
     width: auto;
+}
+.header .nav .nav__logo:hover {
+    transform: scale(1.2);
+    transition: all 300ms ease;
 }
 .header .nav .nav__lists {
     width: 100%;
@@ -65,6 +82,208 @@ body {
 .header .nav .nav__list li a p:hover {
     /* border-bottom: 1px solid var(--blanco); */
     transform: scale(1.2);
-    transition: all .4s ease-in-out;
+    transition: all 300ms ease-in-out;
+}
 
+/*- - - - C O N T A I N E R - - - - - */
+.container {
+    width: 100%;
+    height: 100vh;
+}
+/*- - - - - C T A - - - - -*/
+.cta {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    border-bottom: 2px solid var(--purpura);
+    border-left: 2px solid var(--purpura);
+    color: var(--purpura);
+    background-color: #fff;
+}
+/*- - - - - R E S L T A D O - - -  - -*/
+.resaltado {
+    color: #fffb00;
+}
+/*- - - S U A V E - - - */
+.suave {
+    font-weight: lighter !important;
+}
+/*- - - - P R E S E N T A C I O N  IZQUIERDA- - - - - */
+#presentacion {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/img/header-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: yellow;
+    position: relative;
+    /* z-index: -2; */
+}
+#presentacion .presentacion__box {
+    width: 95%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: rebeccapurple; */
+}
+.presentacion__box .container__presentacion {
+    width: 100%;
+    height: auto;
+}
+.presentacion__box .container__presentacion h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    /* font-weight: lighter; */
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 1rem;
+    margin-top: 5rem;
+}
+.presentacion__box .container__presentacion h2 {
+    font-family: var(--font-bold);
+    font-size: 5rem;
+    line-height: -5;
+    letter-spacing: 0.1rem;
+    /* font-weight: bold; */
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--amarillo);
+}
+.presentacion__box .container__presentacion p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 0rem;
+}
+.presentacion__box .container__presentacion span {
+    color: var(--blanco);
+    font-weight: lighter;
+}
+.presentacion__box .container__presentacion .conoce {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentacion__box .container__presentacion .conoce .cta {
+    font-weight: 800;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    cursor: pointer;
+}
+
+/*- - - P R E S E N T A C I O N DERECHA----*/
+.presentacion__box .container__derecha {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.presentacion__box .container__derecha .presentacion__img {
+    width: 100%;
+    height: auto;
+    /* background-color: #7a08a7; */
+}
+.presentacion__box .container__derecha img {
+    width: 60%;
+    min-width: 60rem;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+.presentacion__box .container__derecha .laptop {
+    filter: drop-shadow(3px 19px 5px rgba(0, 0, 0, 0.56));
+    /* z-index: -1; */
+}
+.presentacion__box .container__derecha .celular {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: -8rem;
+    bottom: -10rem;
+}
+/*----- W A V E ----*/
+#presentacion .wave {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    background: rgb(113,66,222);
+background: linear-gradient(3deg, rgba(113,66,222,1) 35%, rgba(255,255,255,0) 62%);
+}
+#presentacion .wave img {
+position: absolute;
+bottom: 0;
+}
+#celu {
+    z-index: 2;
+}
+/*- - - - - H A C E M O S - - - -  -*/
+#hacemos {
+    background-color: var(--purpura);
+}
+.container .hacemos__box {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.container .hacemos__box .hacemos__tarjeta-1 {
+    width: 95%;
+    min-width: 50rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 5rem; */
+    /* background-color: rgb(77, 155, 70); */
+}
+.hacemos__box .hacemos__tarjeta-1 h2 {
+    /* margin-top: 2rem; */
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-bold);
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+.hacemos__box .hacemos__tarjeta-1 .hacemos__info {
+    width: 90%;
+}
+.hacemos__box .hacemos__tarjeta-1 p {
+    padding: 1rem;
+    text-align: center;
+    color: var(--blanco);
+}
+.container .hacemos__box .hacemos__tarjeta-2 {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* background-color: purple; */
+}
+
+.container .hacemos__box .hacemos__tarjeta-2 img {
+    width: 140%;
+    height: auto;
 }
