@@ -19,9 +19,6 @@ body {
     --purpura: #7142de;
 }
 
-/*--------------*/
-
-
 /*- - - - - H E A D E R - - -  -*/
 
 .header {
@@ -32,7 +29,7 @@ body {
     /* background-color: var(--blanco); */
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    z-index: 1;
+    z-index: 5;
 }
 .header .nav {
     width: 100%;
@@ -46,7 +43,7 @@ body {
     width: auto;
     height: 55%;
     position: absolute;
-    left: 2rem;
+    left: 3rem;
 }
 .header .nav .nav__logo img {
     height: 100%;
@@ -247,7 +244,7 @@ bottom: 0;
 }
 .container .hacemos__box .hacemos__tarjeta-1 {
     width: 95%;
-    min-width: 50rem;
+    min-width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -273,17 +270,151 @@ bottom: 0;
     text-align: center;
     color: var(--blanco);
 }
+.container .hacemos__box .hacemos__tarjeta-1 .hacemos__cta {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .hacemos__box .hacemos__tarjeta-1 .hacemos__cta a {
+    width: 60%;
+    text-align: center;
+    margin-top: 2rem;
+}
 .container .hacemos__box .hacemos__tarjeta-2 {
     width: 95%;
+    min-width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     position: relative;
     /* background-color: purple; */
 }
 
 .container .hacemos__box .hacemos__tarjeta-2 img {
-    width: 140%;
+    width: 120%;
     height: auto;
+    /* margin: auto; */
+}
+
+
+/*- - - - -  A D A P T A B L E - - - - - - */
+
+#adaptable {
+    width: 100%;
+    height: 70vh;
+    /* background-color: var(--purpura); */
+    background-image: url('../media/img/background-responsive.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: fixed; */
+}
+#adaptable .adaptable__box {
+    width: 95%;
+    height: 100%;
+    /* background-color: #fffb00; */
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+#adaptable .adaptable__box h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-bold);
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--amarillo);
+}
+#adaptable .adaptable__box p {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    color: var(--blanco);
+}
+#adaptable .adaptable__box .adaptable__img {
+    width: 50rem;
+    height: auto;
+    overflow: hidden;
+}
+#adaptable .adaptable__box .adaptable__img img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*- - - - R E C I B I R A S - - - - */
+#recibiras {
+    background-color: var(--purpura);
+}
+.recibiras__box {
+    width: 95%;
+    height: 100vh;
+    /* background-color: purple; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    place-content: center;
+    gap: 1rem;
+}
+.recibiras__box .recibiras__tarjeta {
+    width: 80%;
+    min-width: 25rem;
+    height: 35rem;
+    background-color: #fffffffd;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+.recibiras__box .recibiras__tarjeta .recibiras__img {
+    width: 90%;
+    height: 50%;
+    background-color: var(--purpura);
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.recibiras__box .recibiras__tarjeta .recibiras__img img {
+    width: 100%;
+    height: 100%;
+}
+.recibiras__box .recibiras__tarjeta h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 2rem;
+}
+.recibiras__box .recibiras__tarjeta p {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2rem;
 }
