@@ -17,6 +17,8 @@ body {
     --blanco: #fff;
     --amarillo: #fffb00;
     --purpura: #7142de;
+    --purpura-oscuro: #341f66;
+    --negro: #000000;
 }
 
 /*- - - - - H E A D E R - - -  -*/
@@ -301,73 +303,6 @@ bottom: 0;
 }
 
 
-/*- - - - -  A D A P T A B L E - - - - - - */
-
-#adaptable {
-    width: 100%;
-    height: 70vh;
-    /* background-color: var(--purpura); */
-    background-image: url('../media/img/background-responsive.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    /* position: fixed; */
-}
-#adaptable .adaptable__box {
-    width: 95%;
-    height: 100%;
-    /* background-color: #fffb00; */
-    margin: 0 auto;
-    padding-top: 4rem;
-}
-#adaptable .adaptable__box h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: var(--font-bold);
-    font-weight: 800;
-    font-size: 3rem;
-    color: var(--amarillo);
-}
-#adaptable .adaptable__box p {
-    text-align: center;
-    margin-top: 2rem;
-    font-weight: 600;
-    color: var(--blanco);
-}
-#adaptable .adaptable__box .adaptable__img {
-    width: 50rem;
-    height: auto;
-    overflow: hidden;
-}
-#adaptable .adaptable__box .adaptable__img img {
-    width: 100%;
-    height: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*- - - - R E C I B I R A S - - - - */
 #recibiras {
@@ -386,35 +321,113 @@ bottom: 0;
 .recibiras__box .recibiras__tarjeta {
     width: 80%;
     min-width: 25rem;
-    height: 35rem;
-    background-color: #fffffffd;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    height: 45rem;
+    /* background-color: #341f66; */
     margin: 0 auto;
+    /* border: 2px solid #341f66; */
+    background-color: #341f66;
     border-radius: 2rem;
 }
 .recibiras__box .recibiras__tarjeta .recibiras__img {
-    width: 90%;
-    height: 50%;
-    background-color: var(--purpura);
+    width: 20rem;
+    height: 20rem;
+    /* background-color: var(--amarillo); */
+    /* background: rgb(242,165,58); */
+    /* background: linear-gradient(3deg, rgba(242,165,58,0.9416141456582633) 35%, rgba(255,239,0,1) 61%); */
+    /* background: rgb(255,255,255); */
+    background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(113,66,222,1) 66%);
+
     margin: 0 auto;
     margin-top: 2rem;
-    border-radius: 2rem;
-    overflow: hidden;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
 }
 .recibiras__box .recibiras__tarjeta .recibiras__img img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 120%;
+    margin: 0 auto;
 }
 .recibiras__box .recibiras__tarjeta h3 {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 800;
+    font-family: var(--font-bold);
+    /* font-weight: 800; */
     margin-top: 2rem;
+    color: var(--blanco);
+    background-color: var(--purpura-oscuro);
+    width: auto;
+    border-radius: 2rem;
 }
 .recibiras__box .recibiras__tarjeta p {
-    padding: 1rem;
+    padding: 2rem;
+    font-weight: 400;
     text-align: center;
     margin-top: 2rem;
     line-height: 2rem;
+    color: var(--blanco);
+}
+
+/*- - - - -  A D A P T A B L E - - - - - - */
+
+#adaptable {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../media/img/background-adaptable2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#adaptable .adaptable__box {
+    width: 95%;
+    height: 100%;
+    /* background-color: #fffb00; */
+    margin: 0 auto;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#adaptable .adaptable__box .adaptable__info {
+    width: 60%;
+    height: auto;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: red;
+}
+#adaptable .adaptable__box h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-bold);
+    /* font-weight: 800; */
+    font-size: 2.5rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    /* background-color: #000000e3; */
+    /* background-color: var(--purpura-oscuro); */
+    color: var(--blanco);
+    /* border: 2px solid var(--purpura); */
+    margin-bottom: 4rem;
+}
+#adaptable .adaptable__box p {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+    background-color: #000000e3;
+    background-color: #601cffe5;
+    text-transform: ;
+    color: var(--blanco);
+    padding: 1.4rem;
+    border-radius: 0.5rem;
+}
+#adaptable .adaptable__box .adaptable__img {
+    width: 50rem;
+    height: auto;
+    overflow: hidden;
+}
+#adaptable .adaptable__box .adaptable__img img {
+    width: 100%;
+    height: auto;
 }
