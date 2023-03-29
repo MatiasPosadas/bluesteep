@@ -373,61 +373,49 @@ bottom: 0;
 
 #adaptable {
     width: 100%;
-    height: 70vh;
-    background-image: url('../media/img/background-adaptable2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    background-color: var(--purpura);
 }
 #adaptable .adaptable__box {
     width: 95%;
-    height: 100%;
-    /* background-color: #fffb00; */
+    height: auto;
     margin: 0 auto;
-    padding-top: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
 }
 #adaptable .adaptable__box .adaptable__info {
-    width: 60%;
+    width: 100%;
     height: auto;
-    padding: 4rem;
-    border-radius: 1rem;
-    background-color: red;
-}
-#adaptable .adaptable__box h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: var(--font-bold);
-    /* font-weight: 800; */
-    font-size: 2.5rem;
-    padding: 1rem 3rem;
-    border-radius: 0.5rem;
-    /* background-color: #000000e3; */
     /* background-color: var(--purpura-oscuro); */
-    color: var(--blanco);
-    /* border: 2px solid var(--purpura); */
-    margin-bottom: 4rem;
 }
-#adaptable .adaptable__box p {
-    text-align: center;
-    margin-top: 2rem;
-    font-weight: 600;
-    background-color: #000000e3;
-    background-color: #601cffe5;
-    text-transform: ;
+#adaptable .adaptable__box .adaptable__info h2 {
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    padding: 2rem;
     color: var(--blanco);
-    padding: 1.4rem;
-    border-radius: 0.5rem;
 }
+#adaptable .adaptable__box .adaptable__info p {
+    padding: 2rem;
+    color: var(--blanco);
+    line-height: 2.5rem;
+}
+#adaptable .adaptable__box .adaptable__info p span {
+    color: var(--amarillo);
+    font-family: var(--font-bold);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
 #adaptable .adaptable__box .adaptable__img {
-    width: 50rem;
+    width: 80%;
     height: auto;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
 }
 #adaptable .adaptable__box .adaptable__img img {
     width: 100%;
-    height: auto;
+    height: auto;filter: drop-shadow(37px 88px 5px rgba(0, 0, 0, 0.46));
 }
