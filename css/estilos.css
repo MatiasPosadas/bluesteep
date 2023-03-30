@@ -22,8 +22,8 @@ body {
     --purpura-oscuro: #341f66;
     --negro: #000000;
     --colorado: #e6206c;
-    --degratato-1: rgb(255,57,103);
-    --degratato-2: rgb(252,117,90);
+    --degratato-1: #ff3967;
+    --degratato-2: #fc755a;
 }
 
 /*- - - - - H E A D E R - - -  -*/
@@ -304,7 +304,7 @@ bottom: 0;
 /*- - - - R E C I B I R A S - - - - */
 #recibiras {
     background-color: var(--purpura);
-    background-image: url('../media/img/beki7.jpg');
+    background-image: url('../media/img/bakiti.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,7 +329,9 @@ bottom: 0;
 .recibiras__box .recibiras__tarjeta .recibiras__img {
     width: 20rem;
     height: 20rem;
-    background: linear-gradient(3deg, rgb(255, 0, 212) 0%, rgba(113,66,222,1) 66%);
+    background: rgb(252,117,90);
+    background: linear-gradient(3deg, rgba(252,117,90,1) 0%, rgba(255,255,255,1) 100%);
+
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 50%;
@@ -348,7 +350,8 @@ bottom: 0;
     margin-top: 2rem;
     padding: 1rem 0;
     color: var(--blanco);
-    background-color: var(--purpura-oscuro);
+    background: rgb(255,57,103);
+    background: linear-gradient(3deg, rgba(255,57,103,1) 0%, rgba(252,117,90,1) 100%);
     width: auto;
 }
 .recibiras__box .recibiras__tarjeta p {
@@ -382,7 +385,6 @@ bottom: 0;
     grid-template-columns: 1fr 1fr;
     place-content: center;
     align-items: center;
-    /* background-color: rgba(243, 243, 243, 0.13); */
 }
 #adaptable .adaptable__box .adaptable__info {
     width: 100%;
@@ -446,4 +448,175 @@ bottom: 0;
 #adaptable .adaptable__box .adaptable__img img {
     width: 80%;
     height: auto;filter: drop-shadow(37px 88px 5px rgba(0, 0, 0, 0.46));
+}
+
+/*- - - - - H O S T I N G - - - - -*/
+
+#hosting {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../media/img/servers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#hosting .hosting__box {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hosting .hosting__box .hosting__info {
+    padding-top: 5rem;
+}
+#hosting .hosting__box .hosting__info h2 {
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    font-size: 5rem;
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    color: var(--blanco);
+    background: rgb(255,57,103);
+    background: linear-gradient(3deg, rgba(255,57,103,1) 0%, rgba(252,117,90,1) 100%);
+}
+#hosting .hosting__box .hosting__info h3 {
+    font-size: 2rem;
+    font-family: var(--font-bold);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 3rem;
+    color: var(--negro);
+}
+#hosting .hosting__box .hosting__info p{
+    width: max-content;
+    border-radius: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    color: var(--negro);
+    letter-spacing: 0.1rem;
+}
+#hosting .hosting__box .hosting__info .hosting__data {
+    width: max-content;
+    padding: 1rem;
+    margin: 0 auto;
+    color: var(--blanco);
+    background-color: #ffffff4d;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/*- - - - - E - M A I L - - - - -*/
+#email {
+    height: 80vh;
+    background-color: var(--purpura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#email .email__box {
+    width: 95%;
+    /* height: 60vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    place-items: center;
+}
+#email .email__box .email__info {
+    width: max-content;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+#email .email__box .email__info h2 {
+    font-weight: lighter;
+    font-size: 8rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: var(--blanco);
+}
+#email .email__box .email__info p {
+    color: var(--blanco);
+    font-size: 1.9rem;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+}
+#email .email__box .email__img {
+    width: 80%;
+    height: auto;
+    animation: t1 4s ease infinite;
+
+}
+#email .email__box .email__img img {
+    width: 100%;
+    height: auto;
+}
+
+/*- - - - F O R M - - - - */
+#formulario {
+    background-color: var(--purpura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#formulario .formulario__box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#formulario .formulario__box form {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+}
+#formulario .formulario__box form .form__container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+#formulario .formulario__box form .form__container .form__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-bold);
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+    color: var(--purpura);
+}
+.formulario__box form .form__container .form__input {
+    font-size: 1.8rem;
+    padding: .8em 1em;
+    outline: none;
+    border: 1px solid var(--purpura);
+}
+.formulario__box form .form__container .form__input--mensaje {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+#formulario .formulario__box .formulario__image {
+    width: 90%;
+    height: auto;
+}
+#formulario .formulario__box .formulario__image img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:450px) {
+    .form {
+        padding: 3.5em 1em;
+    }
 }

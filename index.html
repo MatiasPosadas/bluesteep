@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Bluesteep</title>
+    <script src="https://kit.fontawesome.com/e096e48514.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -62,9 +63,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illo molestias praesentium libero numquam architecto eius blanditiis quaerat, non impedit quod aliquam nesciunt sint in quae, est modi corrupti illum, dolores aut quos delectus veritatis error quis. Doloribus, nobis ex.</p>
                     <p class="suave">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, inventore? Molestias tempora in nam dolorum!</p>
                 </div>
-                <div class="hacemos__cta">
+                <!-- <div class="hacemos__cta">
                     <a href="#" class="cta">Saber más</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -118,36 +119,47 @@
 
     <section class="container" id="hosting">
         <div class="hosting__box">
-            <div>
-                <img class="hosting__img" src="" alt="">
-            </div>
-            <div>
-                <h2>Hosting para tu sitio web</h2>
-                <h3>Trabajamos con uno de los mejores hosting a nivel mundial</h3>
-                <p>Aseguramos que tu sitio web este en linea el 99% del tiempo. Con un hardware potente para que tu web tenga
-                    una velocidad importante a la hora de su carga Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim error quisquam ut quo eius deserunt ab voluptatibus tempora tenetur quis.
-                </p>
+            <div class="hosting__info">
+                <h2>Hosting gratis por 1 año</h2>
+                <div class="hosting__data filter">
+                    <h3>Trabajamos con uno de los mejores hosting a nivel mundial</h3>
+                <p >Nos encargamos de tu tranquilidad, tu web sera alojada en un servidor de hosting premium. <br> Asegurando un establecimiento en linea de 24hs. <br> Tus clientes no se perderan de tu web.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container" id="email">
         <div class="email__box">
-            <div>
-                <img src="" alt="">
+            <div class="email__img">
+                <img src="media/img/email.png" alt="">
             </div>
-            <div>
+            <div class="email__info">
                 <h2>E-mail Marketing</h2>
-                <p>Recibi con tu compra tu correo comercial.
-                    ejemplo  'blue@steep.com' pero con la denominacion de tu pàgina adquirida.
+                <p>Recibi con tu compra un correo comercial. <br>
+                    ejemplo  'soporte@bluesteep.com'. <br>
                     Ayuda a generar confianza, profesionalizmo ante tus clientes. 
                 </p>
             </div>
         </div>
     </section>
 
-    <section>
-        H3 <FORM></FORM>
+    <section class="container" id="formulario">
+       <div class="formulario__box">
+        <form class="form" action="https://formspree.io/f/xpzeydja"
+                method="POST" target="_blank">
+            <div class="form__container">
+                <h2 class="form__title">Solicita presupuesto sin cargo</h2>
+                <input type="text" class="form__input" placeholder="Nombre">
+                <input type="email" name="email" class="form__input" placeholder="Correo">
+                <textarea class="form__input form__input--mensaje" name="message" placeholder="Cuentanos ¿qué estas buscando? y dejanos tu numero."></textarea>
+                <input type="submit" value="enviar" class="cta">
+            </div>
+        </form>
+        <div class="formulario__image">
+            <img src="media/img/solicita_formulario.png" alt="">
+        </div>
+       </div>
     </section>
 </body>
 </html>
