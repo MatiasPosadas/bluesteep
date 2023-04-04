@@ -777,6 +777,7 @@ bottom: 0;
 }
 
 
+/*- - - - M E D I A   1 2 0 0 P X   - - - - */
 
 @media (max-width:1200px) {
     .container {
@@ -793,10 +794,16 @@ bottom: 0;
         height: auto;
         padding: 5rem 0;
     }
+    .recibiras__box .recibiras__tarjeta {
+        height: auto;
+    }
 }
+
+/*- - - - M E D I A   1 0 0 0 P X   - - - - */
+
 @media (max-width:1000px) {
     .container {
-        background-color: #382f8a !important;
+        background-color: #0d813d !important;
     }
     .container__derecha {
         display: none;
@@ -804,11 +811,20 @@ bottom: 0;
     #presentacion .presentacion__box {
         display: block;
     }
+    .presentacion__box .container__presentacion {
+        padding-bottom: 0;
+        margin: auto;
+        padding-top: 20%;
+    }
     .container__presentacion {
         display: block;
     }
-    .recibiras__box .recibiras__tarjeta {
+    #hacemos {
         height: auto;
+        padding: 3rem 0;
+    }
+    #hacemos h2 {
+        margin: 0;
     }
     #footer .footer .footer__info {
         grid-template-columns: 1fr 1fr;
@@ -817,6 +833,10 @@ bottom: 0;
         display: block;
     }
 }
+
+/*- - - - M E D I A   8 1 0 P X   - - - - */
+
+
 @media (max-width:810px) {
     .container {
         background-color: #070af1 !important;
@@ -826,6 +846,9 @@ bottom: 0;
         overflow: hidden;
     }
 }
+
+/*- - - - M E D I A   4 5 0 P X   - - - - */
+
 
 @media (max-width:450px) {
     .form {
