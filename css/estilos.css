@@ -33,7 +33,6 @@ body {
     height: 4rem;
     position: fixed;
     top: 0rem;
-    /* background-color: var(--blanco); */
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     z-index: 5;
@@ -99,14 +98,13 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
-    /* font-weight: bold; */
+    cursor: pointer;
     padding: 1rem;
     border-radius: 2rem;
     border: none;
     border-bottom: 2px solid var(--colorado);
     border-left: 2px solid var(--colorado);
     color: var(--purpura);
-    /* background-color: #fff; */
     color: var(--blanco);
     background: rgb(255,57,103);
     background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
@@ -116,9 +114,7 @@ body {
     color: #fffb00;
 }
 /*- - - S U A V E - - - */
-.suave {
-    font-weight: lighter !important;
-}
+
 /*- - - - P R E S E N T A C I O N  IZQUIERDA- - - - - */
 #presentacion {
     width: 100%;
@@ -127,7 +123,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
     /* z-index: -2; */
 }
@@ -145,6 +141,11 @@ body {
 .presentacion__box .container__presentacion {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30rem;
 }
 .presentacion__box .container__presentacion h3 {
     font-size: 2rem;
@@ -202,14 +203,15 @@ body {
 .presentacion__box .container__derecha .presentacion__img {
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
     /* background-color: #7a08a7; */
 }
 .presentacion__box .container__derecha img {
-    width: 60%;
-    min-width: 60rem;
-    height: auto;
+    width: 100%;
+    /* height: auto;
     position: absolute;
-    right: 0;
+    right: 0; */
 }
 .presentacion__box .container__derecha .laptop {
     filter: drop-shadow(3px 19px 5px rgba(0, 0, 0, 0.56));
@@ -317,6 +319,7 @@ bottom: 0;
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     place-content: center;
+    align-items: center;
     gap: 1rem;
 }
 .recibiras__box .recibiras__tarjeta {
@@ -374,7 +377,7 @@ bottom: 0;
 #adaptable {
     width: 100%;
     height: 100vh;
-    background-color: var(--purpura);
+    background-color: var(--blanco);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -391,18 +394,20 @@ bottom: 0;
     width: 100%;
     height: auto;
     text-align: center;
+    color: var(--purpura);
 }
 #adaptable .adaptable__box .adaptable__info h2 {
     margin-bottom: 4rem;
     font-size: 6rem;
     font-weight: lighter;
     text-transform: uppercase;
-    color: var(--blanco);
+    color: var(--purpura);
 }
 #adaptable .adaptable__box .adaptable__info p {
     padding: 2rem;
     color: var(--blanco);
     line-height: 2.5rem;
+    color: var(--purpura);
 }
 #adaptable .adaptable__box .adaptable__info p span {
     font-family: var(--font-bold);
@@ -428,14 +433,14 @@ bottom: 0;
     transition: 300ms ease-in-out;
 }
 #adaptable .adaptable__box .adaptable__img {
-    width: 80%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: t1 2s ease infinite;
 }
-@keyframes t1 {
+/* @keyframes t1 {
     0% {
         transform: translate(0);
     }
@@ -445,7 +450,7 @@ bottom: 0;
     100% {
         transform: translateY(0)
     }
-}
+} */
 #adaptable .adaptable__box .adaptable__img img {
     width: 80%;
     height: auto;filter: drop-shadow(37px 88px 5px rgba(0, 0, 0, 0.46));
@@ -545,13 +550,23 @@ bottom: 0;
     color: var(--blanco);
 }
 #email .email__box .email__info p {
+    /* color: var(--blanco); */
+    /* color: var(--purpura); */
+    /* background-color: var(--blanco); */
+    background: rgb(255,57,103);
+    background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
+    border-bottom: 2px solid var(--colorado);
+    border-left: 2px solid var(--colorado);
     color: var(--blanco);
+    padding: 2rem;
+    border-radius: 2rem;
     font-size: 1.9rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
     letter-spacing: 0.1rem;
 }
 #email .email__box .email__img {
     width: 80%;
+    max-width: 60rem;
     height: auto;
     animation: t1 4s ease infinite;
 
@@ -564,6 +579,7 @@ bottom: 0;
 /*- - - - F O R M - - - - */
 #formulario {
     background-color: var(--purpura);
+    /* background-color: var(--blanco); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -575,7 +591,8 @@ bottom: 0;
     grid-template-columns: 1fr 1fr;
 }
 #formulario .formulario__box form {
-    background-color: #fff;
+    background-color: var(--purpura);
+    /* background-color: var(); */
     width: 90%;
     max-width: 400px;
     margin: auto;
@@ -591,10 +608,12 @@ bottom: 0;
 #formulario .formulario__box form .form__container .form__title {
     text-align: center;
     text-transform: uppercase;
-    font-family: var(--font-bold);
-    font-size: 1.9rem;
+    /* font-family: var(--font-bold); */
+    font-weight: lighter;
+    font-size: 3rem;
     margin-bottom: .4em;
     color: var(--purpura);
+    color: var(--blanco);
 }
 .formulario__box form .form__container .form__input {
     font-size: 1.8rem;
@@ -757,6 +776,56 @@ bottom: 0;
     color: var(--amarillo);
 }
 
+
+
+@media (max-width:1200px) {
+    .container {
+        background-color: #2f8a8a !important;
+    }
+    #email {
+        height: auto;
+    }
+    #email .email__box {
+        display: flex;
+        flex-direction: column;
+    }
+    #formulario, #clientes {
+        height: auto;
+        padding: 5rem 0;
+    }
+}
+@media (max-width:1000px) {
+    .container {
+        background-color: #382f8a !important;
+    }
+    .container__derecha {
+        display: none;
+    }
+    #presentacion .presentacion__box {
+        display: block;
+    }
+    .container__presentacion {
+        display: block;
+    }
+    .recibiras__box .recibiras__tarjeta {
+        height: auto;
+    }
+    #footer .footer .footer__info {
+        grid-template-columns: 1fr 1fr;
+    }
+    #footer .footer__contacto {
+        display: block;
+    }
+}
+@media (max-width:810px) {
+    .container {
+        background-color: #070af1 !important;
+    }
+    .recibiras__box {
+        height: max-content;
+        overflow: hidden;
+    }
+}
 
 @media (max-width:450px) {
     .form {
