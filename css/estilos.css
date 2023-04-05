@@ -11,7 +11,7 @@ html {
 }
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 :root {
     --font-bold: 'Archivo Black', sans-serif;
@@ -359,8 +359,9 @@ bottom: 0;
     width: auto;
 }
 .recibiras__box .recibiras__tarjeta p {
-    padding: 2rem;
     font-weight: 400;
+    font-size: 1.8rem;
+    padding: 2rem;
     text-align: center;
     margin-top: 2rem;
     line-height: 2rem;
@@ -404,6 +405,7 @@ bottom: 0;
     color: var(--purpura);
 }
 #adaptable .adaptable__box .adaptable__info p {
+    font-size: 1.8rem;
     padding: 2rem;
     color: var(--blanco);
     line-height: 2.5rem;
@@ -466,9 +468,12 @@ bottom: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 #hosting .hosting__box {
-    width: 95%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     text-align: center;
@@ -477,12 +482,16 @@ bottom: 0;
     justify-content: center;
 }
 #hosting .hosting__box .hosting__info {
+    width: 100%;
+    height: auto;
     padding-top: 5rem;
 }
 #hosting .hosting__box .hosting__info h2 {
-    width: max-content;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
     font-size: 5rem;
     font-family: var(--font-bold);
     text-transform: uppercase;
@@ -501,23 +510,29 @@ bottom: 0;
     color: var(--negro);
 }
 #hosting .hosting__box .hosting__info p{
-    width: max-content;
+    width: 90%;
+    color: var(--purpura);
+    font-size: 1.8rem;
+    font-weight: 600;
     border-radius: 2rem;
     margin: 0 auto;
     margin-top: 1rem;
     padding: 1rem 2rem;
-    font-weight: 600;
-    color: var(--negro);
     letter-spacing: 0.1rem;
 }
 #hosting .hosting__box .hosting__info .hosting__data {
-    width: max-content;
+    width: 100%;
+    height: auto;
     padding: 1rem;
     margin: 0 auto;
     color: var(--blanco);
-    background-color: #ffffff6c;
+    background-color: #ffffff86;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+}
+#hosting .hosting__box .hosting__info .hosting__data h3 {
+    width: 90%;
+    color: var(--purpura);
 }
 
 /*- - - - - E - M A I L - - - - -*/
@@ -781,7 +796,7 @@ bottom: 0;
 
 @media (max-width:1200px) {
     .container {
-        background-color: #2f8a8a !important;
+        background-color: #03fafa !important;
     }
     #email {
         height: auto;
@@ -789,13 +804,18 @@ bottom: 0;
     #email .email__box {
         display: flex;
         flex-direction: column;
+        padding-bottom: 8rem;
     }
     #formulario, #clientes {
         height: auto;
-        padding: 5rem 0;
+        padding: 8rem 0;
     }
     .recibiras__box .recibiras__tarjeta {
         height: auto;
+    }
+    #footer .footer .footer__info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
@@ -826,6 +846,19 @@ bottom: 0;
     #hacemos h2 {
         margin: 0;
     }
+    #formulario {
+    background: rgb(255,57,103);
+    background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
+    }
+    #formulario .formulario__box {
+        grid-template-columns: 1fr;
+    }
+    #formulario .formulario__box form {
+        max-width: 70%;
+    }
+    #formulario .formulario__box .formulario__image {
+        display: none;
+    }
     #footer .footer .footer__info {
         grid-template-columns: 1fr 1fr;
     }
@@ -841,9 +874,49 @@ bottom: 0;
     .container {
         background-color: #070af1 !important;
     }
+    .presentacion__box .container__presentacion h3 {
+        font-size: 3rem;
+    }
     .recibiras__box {
         height: max-content;
         overflow: hidden;
+    }
+    .container .hacemos__box {
+        display: flex;
+        justify-items: start;
+    }
+    #hacemos {
+        background-image: url('../media/img/despegar.png');
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 8rem 0;
+    }
+    .container .hacemos__box .hacemos__tarjeta-2{
+        display: none;
+    }
+    .container .hacemos__box .hacemos__tarjeta-1 {
+        background-color: #0f06065b;
+        border-radius: 2rem;
+        padding: 2rem 0;
+    }
+    #recibiras {
+        height: auto;
+        padding: 5rem 0;
+    }
+    .recibiras__box .recibiras__tarjeta {
+        margin-bottom: 3rem;
+    }
+    #adaptable .adaptable__box {
+        display: flex;
+        flex-direction: column;
+    }
+    #adaptable .adaptable__box .adaptable__img {
+        width: 80%;
+    }
+    #hosting .hosting__box .hosting__info .hosting__data {
+        margin: 0 auto;
+        max-width: 90%;
     }
 }
 
@@ -851,6 +924,9 @@ bottom: 0;
 
 
 @media (max-width:450px) {
+    .container {
+        background-color: red !important;
+    }
     .form {
         padding: 3.5em 1em;
     }
