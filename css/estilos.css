@@ -1050,7 +1050,6 @@ bottom: 0;
     .hacemos__box .hacemos__tarjeta-1 h2 {
         font-size: 2.4rem;
     }
-    
     #adaptable {
         height: auto;
         padding: 7rem 0;
@@ -1080,6 +1079,12 @@ bottom: 0;
     }
     .recibiras__box .recibiras__tarjeta .recibiras__img img {
         height: 80%;
+    }
+    #hosting {
+        height: 100vh;
+    }
+    #hosting .hosting__box .hosting__info {
+        padding: 0;
     }
     #hosting .hosting__box .hosting__info h2 {
         font-size: 3rem;
