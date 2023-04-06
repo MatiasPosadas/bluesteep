@@ -17,12 +17,14 @@
                 </a>
             </div>
             <div class="nav__lists">
+                <button class="button hamb" type="button"><i class="fa-solid fa-bars"></i></button>
                 <ul class="nav__list">
+                    <a href="#"><p><i class="fa-sharp fa-solid fa-xmark equis"></i></p></a>
                     <li><a href="#"><p>Inicio</p></a></li>
                     <li><a href="#"><p>Contato</p></a></li>
                     <li><a href="#"><p>Preguntas frecuentes</p></a></li>
                     <li><a href="#"><p>Formas de pago</p></a></li>
-                    <!-- <li><a href="#"></a></li> -->
+                    <div class="nav__background"></div>
                 </ul>
             </div>
         </nav>
@@ -152,6 +154,14 @@
                 <input type="email" name="email" class="form__input" placeholder="Correo">
                 <textarea class="form__input form__input--mensaje" name="message" placeholder="Cuentanos ¿qué estas buscando?"></textarea>
                 <input type="submit" value="enviar" class="cta">
+                <div class="form__extra">
+                    <h4>Tambien podes contactarnos via whatsapp haciendo click en el logo aqui debajo</h4>
+                    <a a target="_blank" rel="noopener" href="https://wa.link/0ulocy">
+                        <div class="logo__container">
+                            <img class="logo__wsp" src="media/img/logo-wsp.png" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
         </form>
         <div class="formulario__image">
@@ -167,7 +177,7 @@
             <div class="clientes__clientes">
                 <div class="cliente cliente-1">
                     <img class="cliente-1" src="media/img/CONYWEB.png" alt="">
-                    <label for="cliente-1">www.cursoscony.com <br> <span><a href="www.google.com" class="cta" target="_blank">Visitar sitio</a></span> </label>
+                    <a target="_blank" rel="noopener" class="cta" href="https://www.cursoscony.com"> Visitar sitio</a>
                 </div>
             </div>
         </div>
@@ -195,6 +205,6 @@
                 </ul>
             </div>
         </footer>
-    >
+        <script src="js/index.js"></script>
 </body>
 </html>

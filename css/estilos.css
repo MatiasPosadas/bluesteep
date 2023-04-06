@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
+    background-color: #888787;
 }
 :root {
     --font-bold: 'Archivo Black', sans-serif;
@@ -421,6 +422,7 @@ bottom: 0;
     width: 100%;
     height: 8rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -552,32 +554,30 @@ bottom: 0;
     place-items: center;
 }
 #email .email__box .email__info {
-    width: max-content;
+    width: 100%;
     padding: 1rem 2rem;
     margin: 0 auto;
     text-align: center;
 }
 #email .email__box .email__info h2 {
     font-weight: lighter;
-    font-size: 8rem;
+    font-size: 7rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
     color: var(--blanco);
 }
 #email .email__box .email__info p {
-    /* color: var(--blanco); */
-    /* color: var(--purpura); */
-    /* background-color: var(--blanco); */
+    width: auto;
+    font-size: 1.9rem;
+    color: var(--blanco);
+    padding: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
     background: rgb(255,57,103);
     background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
     border-bottom: 2px solid var(--colorado);
     border-left: 2px solid var(--colorado);
-    color: var(--blanco);
-    padding: 2rem;
     border-radius: 2rem;
-    font-size: 1.9rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.1rem;
 }
 #email .email__box .email__img {
     width: 80%;
@@ -649,6 +649,27 @@ bottom: 0;
     width: 100%;
     height: auto;
 }
+/*EXTRA FORMULARIO*/
+#formulario .form__extra {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#formulario .form__extra h4 {
+    color: var(--blanco);
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+#formulario .form__extra .logo__container {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+#formulario .form__extra .logo__container img {
+    width: 100%;
+    height: auto;
+}
 
 /*- - - - C L I E N T E S - - - - */
 #clientes {
@@ -710,6 +731,7 @@ bottom: 0;
     height: 20vh;
     background-color: var(--purpura-oscuro);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 #footer .footer {
@@ -813,6 +835,10 @@ bottom: 0;
     .recibiras__box .recibiras__tarjeta {
         height: auto;
     }
+    #clientes .clientes__box .clientes__clientes .cliente {
+        width: 60%;
+        max-width: 60%;
+    }
     #footer .footer .footer__info {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -874,6 +900,40 @@ bottom: 0;
     .container {
         background-color: #070af1 !important;
     }
+    .button {
+        color: var(--blanco);
+        background-color: transparent;
+        font-size: 3rem;
+        border: none;
+        position: absolute;
+        right: 2rem;
+        top: 0.5rem;
+    }
+    .hamb {
+        display: none;
+    }
+    .header .nav .nav__list {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--purpura);
+        position: absolute;
+        right: 0;
+    }
+    .header .nav .equis {
+        color: var(--blanco);
+        font-size: 5rem;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+    }
+    #adaptable {
+        height: 115vh;
+    }
     .presentacion__box .container__presentacion h3 {
         font-size: 3rem;
     }
@@ -904,6 +964,10 @@ bottom: 0;
         height: auto;
         padding: 5rem 0;
     }
+    #clientes .clientes__box .clientes__clientes .cliente {
+        width: 90%;
+        max-width: 90%;
+    }
     .recibiras__box .recibiras__tarjeta {
         margin-bottom: 3rem;
     }
@@ -925,9 +989,81 @@ bottom: 0;
 
 @media (max-width:450px) {
     .container {
-        background-color: red !important;
+        background-color: rgb(223, 26, 230) !important;
+    }
+    #adaptable {
+        height: 120vh;
+        padding: 2rem 0;
+    }
+    #adaptable .adaptable__box {
+        height: 100%;
+        margin: auto;
+        background-color: #0000009d;
+        padding: 2rem 0;
+        border-radius: 2rem;
+        background-image: url('../media/img/CELU2.0.png');
+        background-position: center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+    #adaptable .adaptable__box .adaptable__info h2 {
+        font-size: 4rem;
+        color: var(--blanco);
+    }
+    #adaptable .adaptable__box .adaptable__info p {
+        color: var(--blanco);
+    }
+    #adaptable .adaptable__box .adaptable__img img {
+        display: none;
+    }
+    #adaptable .adaptable__box .adaptable__info .icons img {
+        height: 80%;
+    }
+    #hosting .hosting__box .hosting__info h2 {
+        font-size: 3rem;
+    }
+    #clientes .clientes__box .clientes__clientes .cliente {
+        width: 90%;
+        max-width: 90%;
+    }
+    #email .email__box .email__info h2 {
+        font-size: 4rem;
+    }
+    #email .email__box .email__info p {
+        padding: 1rem;
+    }
+
+    #clientes .clientes__box .clientes__info h3 {
+        font-size: 4rem;
     }
     .form {
         padding: 3.5em 1em;
+    }
+    #formulario .formulario__box form {
+        max-width: 90%;
+    }
+    #footer {
+        flex-direction: column;
+    }
+    #footer .footer .footer__info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #formulario .formulario__box form {
+        background-color: #ffffff00;
+    }
+    #formulario .formulario__box form {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/*- - - - M E D I A   3 8 0 P X   - - - - */
+
+
+@media (max-width:380px) {
+    #hosting {
+        height: 100vh;
     }
 }
