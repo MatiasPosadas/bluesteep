@@ -1047,6 +1047,10 @@ bottom: 0;
     #hacemos {
         background-size: 150%;
     }
+    .hacemos__box .hacemos__tarjeta-1 h2 {
+        font-size: 2.4rem;
+    }
+    
     #adaptable {
         height: auto;
         padding: 7rem 0;
@@ -1072,6 +1076,9 @@ bottom: 0;
         display: none;
     }
     #adaptable .adaptable__box .adaptable__info .icons img {
+        height: 80%;
+    }
+    .recibiras__box .recibiras__tarjeta .recibiras__img img {
         height: 80%;
     }
     #hosting .hosting__box .hosting__info h2 {
