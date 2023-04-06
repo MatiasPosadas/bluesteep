@@ -549,6 +549,7 @@ bottom: 0;
     grid-template-columns: 1fr 1fr;
     place-content: center;
     place-items: center;
+    text-align: center;
 }
 #email .email__box .email__info {
     width: 100%;
@@ -632,6 +633,7 @@ bottom: 0;
     padding: .8em 1em;
     outline: none;
     border: 1px solid var(--purpura);
+    border: none;
 }
 .formulario__box form .form__container .form__input--mensaje {
     resize: none;
@@ -860,7 +862,7 @@ bottom: 0;
     .presentacion__box .container__presentacion {
         padding-bottom: 0;
         margin: auto;
-        padding-top: 20%;
+        /* padding-top: 20%; */
     }
     .container__presentacion {
         display: block;
@@ -1027,6 +1029,9 @@ bottom: 0;
     #email .email__box .email__info {
         padding: 0;
     }
+    #formulario .formulario__box form {
+        background-color: transparent;
+    }
 }
 
 /*- - - - M E D I A   4 5 0 P X   - - - - */
@@ -1080,9 +1085,9 @@ bottom: 0;
         font-size: 4rem;
     }
     #email .email__box .email__info p {
-        padding: 1rem;
+        padding: 1rem 0;
+        border: none;
     }
-
     #clientes .clientes__box .clientes__info h3 {
         font-size: 4rem;
     }
@@ -1092,6 +1097,13 @@ bottom: 0;
     #formulario .formulario__box form {
         max-width: 90%;
     }
+    #formulario .formulario__box form {
+        background-color: #ffffff00;
+    }
+    #formulario .formulario__box form {
+        width: 100%;
+        padding: 0;
+    }
     #footer {
         flex-direction: column;
     }
@@ -1099,12 +1111,8 @@ bottom: 0;
         grid-template-columns: 1fr;
         text-align: center;
     }
-    #formulario .formulario__box form {
-        background-color: #ffffff00;
-    }
-    #formulario .formulario__box form {
-        width: 100%;
-        padding: 0;
+    #footer .footer__contacto {
+        height: max-content;
     }
 }
 
@@ -1114,6 +1122,6 @@ bottom: 0;
 
 @media (max-width:380px) {
     #hosting {
-        height: 100vh;
+        height: 123vh;
     }
 }
