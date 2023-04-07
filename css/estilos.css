@@ -1088,6 +1088,7 @@ bottom: 0;
     }
     #hosting .hosting__box .hosting__info h2 {
         font-size: 3rem;
+        padding: 0.5rem;
     }
     #clientes .clientes__box .clientes__clientes .cliente {
         width: 90%;
