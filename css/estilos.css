@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +16,7 @@ body {
     background-color: #888787;
 }
 :root {
+    --font-comun:'Kanit', sans-serif;
     --font-bold: 'Archivo Black', sans-serif;
     --font-cursiva: 'Tangerine', cursive;
     --blanco: #fff;
@@ -93,14 +95,15 @@ nav a {
 .cta {
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 1.2rem;
     cursor: pointer;
-    padding: 1rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
     border-radius: 2rem;
     border: none;
     border-bottom: 2px solid var(--colorado);
     border-left: 2px solid var(--colorado);
-    color: var(--purpura);
     color: var(--blanco);
     background: rgb(255,57,103);
     background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
@@ -111,7 +114,7 @@ nav a {
 }
 /*- - - S U A V E - - - */
 
-/*- - - - P R E S E N T A C I O N  IZQUIERDA- - - - - */
+/*- - - - P R E S E N T A C I O N - - - - - */
 #presentacion {
     width: 100%;
     height: 100vh;
@@ -119,107 +122,46 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    /* z-index: -2; */
 }
-#presentacion .presentacion__box {
-    /* width: 95%;
-    height: 100%; */
-    padding: 2rem;
-    padding-top: 7rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    overflow: hidden;
-    /* background-color: rebeccapurple; */
-}
-.presentacion__box .container__presentacion {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30rem;
-}
-.presentacion__box .container__presentacion h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    /* font-weight: lighter; */
-    text-align: center;
-    color: var(--blanco);
-    margin-top: 1rem;
-    margin-top: 5rem;
-}
-.presentacion__box .container__presentacion h2 {
-    font-family: var(--font-bold);
-    font-size: 5rem;
-    line-height: -5;
-    letter-spacing: 0.1rem;
-    /* font-weight: bold; */
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--amarillo);
-}
-.presentacion__box .container__presentacion p {
-    font-size: 2rem;
-    margin-top: 2rem;
-    color: var(--blanco);
-    text-align: center;
-    margin-top: 0rem;
-}
-.presentacion__box .container__presentacion span {
-    color: var(--blanco);
-    font-weight: lighter;
-}
-.presentacion__box .container__presentacion .conoce {
-    width: 100%;
-    height: 5rem;
-    margin-top: 2rem;
+#presentacion .presentacion__box{
+    width: 95%;
+    height: 100%;
+    /* background-color: rgba(63, 63, 63, 0.438); */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.presentacion__box .container__presentacion .conoce .cta {
-    /* font-weight: 800; */
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
-    cursor: pointer;
-}
-
-/*- - - P R E S E N T A C I O N DERECHA----*/
-.presentacion__box .container__derecha {
+#presentacion .presentacion__box .container__presentacion {
     width: 100%;
     height: 100%;
-    /* background-color: red; */
+    padding-top: 20rem;
 }
-.presentacion__box .container__derecha .presentacion__img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    /* background-color: #7a08a7; */
+#presentacion .presentacion__box .container__presentacion h2 {
+    color: var(--blanco);
+    /* font-family: var(--font-comun); */
+    font-size: 6rem;
+    font-weight: 600;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
 }
-.presentacion__box .container__derecha img {
-    width: 100%;
-    /* height: auto;
-    position: absolute;
-    right: 0; */
+#presentacion .presentacion__box .container__presentacion h3 {
+    color: var(--purpura-oscuro);
+    font-size: 3rem;
+    text-transform: uppercase;
 }
-.presentacion__box .container__derecha .laptop {
-    filter: drop-shadow(3px 19px 5px rgba(0, 0, 0, 0.56));
-    /* z-index: -1; */
+#presentacion .presentacion__box .container__presentacion p {
+    color: var(--blanco);
 }
-.presentacion__box .container__derecha .celular {
-    width: 40%;
-    height: auto;
-    position: absolute;
-    right: -8rem;
-    bottom: -10rem;
-}
+
+
+
+
+
+
 /*----- W A V E ----*/
 #presentacion .wave {
     width: 100%;
@@ -232,9 +174,6 @@ background: linear-gradient(3deg, rgba(113,66,222,1) 35%, rgba(255,255,255,0) 62
 #presentacion .wave img {
 position: absolute;
 bottom: 0;
-}
-#celu {
-    z-index: 2;
 }
 /*- - - - - H A C E M O S - - - -  -*/
 #hacemos {
@@ -896,7 +835,6 @@ bottom: 0;
     #footer .footer__contacto {
         display: block;
     }
-    
 }
 
 /*- - - - M E D I A   8 1 0 P X   - - - - */
