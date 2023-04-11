@@ -164,7 +164,7 @@ nav a span {
 }
 .presentacion__subtitle .presentacion__lista .lista {
     margin-left: 1rem;
-    color: #03fafa;
+    color: var(--amarillo);
 }
 .presentacion__subtitle .presentacion__lista .lista span {
     color: var(--blanco);
@@ -553,8 +553,6 @@ bottom: 0;
 #email {
     height: 80vh;
     background-color: var(--purpura);
-    background: rgb(113,66,222);
-background: linear-gradient(3deg, rgba(113,66,222,1) 20%, rgba(255,255,255,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -691,8 +689,6 @@ background: linear-gradient(3deg, rgba(113,66,222,1) 20%, rgba(255,255,255,1) 10
 #clientes {
     height: 80vh;
     background-color: var(--purpura);
-    background: rgb(52,31,102);
-    background: linear-gradient(3deg, rgba(52,31,102,1) 20%, rgba(113,66,222,1) 80%);
 }
 #clientes .clientes__box {
     width: 95%;
