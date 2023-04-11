@@ -692,7 +692,7 @@ background: linear-gradient(3deg, rgba(113,66,222,1) 20%, rgba(255,255,255,1) 10
     height: 80vh;
     background-color: var(--purpura);
     background: rgb(52,31,102);
-background: linear-gradient(3deg, rgba(52,31,102,1) 20%, rgba(113,66,222,1) 80%);
+    background: linear-gradient(3deg, rgba(52,31,102,1) 20%, rgba(113,66,222,1) 80%);
 }
 #clientes .clientes__box {
     width: 95%;
