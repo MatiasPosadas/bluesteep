@@ -28,7 +28,7 @@ body {
     --degratato-1: #ff3967;
     --degratato-2: #fc755a;
 }
-/*- - - - C O N T A I N E R - - - - - */
+/*- - - - C O N T A I N E R - - - - -F */
 .container {
     width: 100%;
     height: 100vh;
@@ -537,10 +537,10 @@ bottom: 0;
 #hosting .hosting__box .hosting__info .hosting__data {
     width: 90%;
     height: auto;
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 0 auto;
     color: var(--blanco);
-    background-color: #ffffff86;
+    background-color: #ffffffc5;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
@@ -553,6 +553,8 @@ bottom: 0;
 #email {
     height: 80vh;
     background-color: var(--purpura);
+    background: rgb(113,66,222);
+background: linear-gradient(3deg, rgba(113,66,222,1) 20%, rgba(255,255,255,1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -689,6 +691,8 @@ bottom: 0;
 #clientes {
     height: 80vh;
     background-color: var(--purpura);
+    background: rgb(52,31,102);
+background: linear-gradient(3deg, rgba(52,31,102,1) 20%, rgba(113,66,222,1) 80%);
 }
 #clientes .clientes__box {
     width: 95%;
