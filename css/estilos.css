@@ -959,7 +959,7 @@ bottom: 0;
     }
     .container .hacemos__box .hacemos__tarjeta-2 {
         position: absolute;
-        width: 80%;
+        width: 70%;
         right: -8rem;
         top: 0;
         filter: drop-shadow(-6px 28px 17px rgba(0, 0, 0, 0.4));
@@ -972,12 +972,6 @@ bottom: 0;
     }
     #hosting .hosting__box .hosting__info h2 {
         padding: 2rem 1rem;
-    }
-    /* #formulario {
-    background: rgb(255,57,103);
-    background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
-    } */
-    .form {
     }
     #formulario .formulario__box {
         grid-template-columns: 1fr;
@@ -1092,6 +1086,7 @@ bottom: 0;
     .container .hacemos__box {
         display: flex;
         justify-items: start;
+        padding-top: 4rem;
     }
     #hacemos {
         height: auto;
