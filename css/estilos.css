@@ -1035,7 +1035,7 @@ bottom: 0;
         display: none;
     }
     .container .hacemos__box .hacemos__tarjeta-1 {
-        background-color: #0f06065b;
+        background-color: #0f0606a4;
         border-radius: 2rem;
         padding: 2rem 0;
     }
@@ -1122,11 +1122,11 @@ bottom: 0;
     #adaptable {
         height: auto;
         padding: 7rem 0;
-        background-color: var(--purpura);
+        background-color: var(--blanco);
     }
     #adaptable .adaptable__box {
         margin: 0 auto;
-        background-color: #0000009d;
+        /* background-color: #0000009d; */
         padding: 2rem 0;
         border-radius: 2rem;
         background-image: url('../media/img/CELU2.0.png');
@@ -1139,9 +1139,11 @@ bottom: 0;
         font-size: 4rem;
         color: var(--blanco);
         padding: 0 0.4rem;
+        color: var(--purpura-oscuro);
     }
     #adaptable .adaptable__box .adaptable__info p {
         color: var(--blanco);
+        color: var(--purpura-oscuro);
     }
     #adaptable .adaptable__box .adaptable__img img {
         display: none;
