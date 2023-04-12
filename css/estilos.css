@@ -880,7 +880,7 @@ bottom: 0;
         /* padding-top: 20%; */
     }
     #presentacion .presentacion__box .container__presentacion {
-        padding: 5rem 0 0 5rem;
+        padding: 20vh 0 0 5rem;
     }
     .container__presentacion {
         display: block;
@@ -1000,13 +1000,13 @@ bottom: 0;
         height: 115vh;
     }
     #presentacion .presentacion__box .container__presentacion {
-        padding: 5rem 0 0 5rem;
+        padding: 10rem 0 0 5rem;
     }
     #presentacion .presentacion__box .container__presentacion h2 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
     #presentacion .presentacion__box .container__presentacion h1 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
     .recibiras__box {
         height: max-content;
@@ -1071,10 +1071,10 @@ bottom: 0;
     padding: 8rem 0 0 2rem;
 }
 #presentacion .presentacion__box .container__presentacion h2 {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 #presentacion .presentacion__box .container__presentacion h1 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 }
 /*- - - - M E D I A   4 5 0 P X   - - - - */
@@ -1083,6 +1083,15 @@ bottom: 0;
 @media (max-width:450px) {
     .container {
         background-color: rgb(223, 26, 230) !important;
+    }
+    #presentacion .presentacion__box .container__presentacion {
+    padding: 8rem 0 0 2rem;
+    }
+    #presentacion .presentacion__box .container__presentacion h2 {
+    font-size: 4rem;
+    }
+    #presentacion .presentacion__box .container__presentacion h1 {
+    font-size: 3rem;
     }
     .presentacion__box .container__presentacion h2 {
         font-size: 4rem;
@@ -1190,9 +1199,9 @@ bottom: 0;
         display: none;
     }
     #presentacion .presentacion__box .container__presentacion {
-        padding: 2rem 0 0 1rem;
+        padding: 5rem 0 0 1rem;
     }
-    #hosting {
+    /* #hosting {
         height: 123vh;
-    }
+    } */
 }
