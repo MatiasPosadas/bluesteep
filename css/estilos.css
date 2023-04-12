@@ -1022,7 +1022,7 @@ bottom: 0;
     .ham {
         display: block;
         position: absolute;
-        /* top: 5px; */
+        top: 15px;
         right: 25px;
         transition: 0.2s 0.1;
     }
@@ -1115,6 +1115,15 @@ bottom: 0;
     }
     .container .hacemos__box .hacemos__tarjeta-1 h2 {
         font-weight: lighter;
+    }
+    .container .hacemos__box .hacemos__vmobile{
+        width: 100%;
+        height: 25rem;
+        /* background-color: red; */
+        background-image: url('../media/img/TABLET-WEB.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     #recibiras {
         height: auto;
