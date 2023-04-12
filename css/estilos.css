@@ -53,6 +53,11 @@ body {
 .cta-1 {
     margin-left: 1rem;
 }
+.cta-b {
+    background-color: #fff;
+    /* color: var(--purpura); */
+    letter-spacing: 2px;
+}
 /*- - - - - R E S L T A D O - - -  - -*/
 .resaltado {
     color: #fffb00;
@@ -396,6 +401,7 @@ bottom: 0;
     align-items: center;
     justify-content: center;
 }
+
 #adaptable .adaptable__box {
     width: 95%;
     height: auto;
@@ -673,6 +679,7 @@ bottom: 0;
     color: var(--blanco);
     font-weight: lighter;
     text-align: center;
+    letter-spacing: 2px;
     margin-bottom: 2rem;
 }
 #formulario .form__extra .logo__container {
@@ -769,6 +776,7 @@ bottom: 0;
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    padding: 0.5rem 0;
     list-style: none;
     text-decoration: none;
 }
@@ -832,7 +840,7 @@ bottom: 0;
 
 @media (max-width:1200px) {
     .container {
-        background-color: #03fafa !important;
+        /* background-color: #03fafa !important; */
     }
     #email {
         height: auto;
@@ -866,7 +874,7 @@ bottom: 0;
 
 @media (max-width:1000px) {
     .container {
-        background-color: #0d813d !important;
+        /* background-color: #0d813d !important; */
     }
     .container__derecha {
         display: none;
@@ -899,7 +907,7 @@ bottom: 0;
         height: 60%;
     }
     #hosting .hosting__box .hosting__info h2 {
-        padding: 0;
+        padding: 2rem 1rem;
     }
     #formulario {
     background: rgb(255,57,103);
@@ -927,7 +935,7 @@ bottom: 0;
 
 @media (max-width:810px) {
     .container {
-        background-color: #070af1 !important;
+        /* background-color: #070af1 !important; */
     }
     .button {
         color: var(--blanco);
@@ -950,7 +958,7 @@ bottom: 0;
     .ham {
         display: block;
         position: absolute;
-        top: 5px;
+        /* top: 5px; */
         right: 25px;
         transition: 0.2s 0.1;
     }
@@ -1082,7 +1090,7 @@ bottom: 0;
 
 @media (max-width:450px) {
     .container {
-        background-color: rgb(223, 26, 230) !important;
+        /* background-color: rgb(223, 26, 230) !important; */
     }
     #presentacion .presentacion__box .container__presentacion {
     padding: 8rem 0 0 2rem;
@@ -1114,6 +1122,7 @@ bottom: 0;
     #adaptable {
         height: auto;
         padding: 7rem 0;
+        background-color: var(--purpura);
     }
     #adaptable .adaptable__box {
         margin: 0 auto;
@@ -1124,10 +1133,12 @@ bottom: 0;
         background-position: center;
         background-size: 80%;
         background-repeat: no-repeat;
+        background-image: none;
     }
     #adaptable .adaptable__box .adaptable__info h2 {
         font-size: 4rem;
         color: var(--blanco);
+        padding: 0 0.4rem;
     }
     #adaptable .adaptable__box .adaptable__info p {
         color: var(--blanco);
@@ -1159,7 +1170,7 @@ bottom: 0;
         font-size: 4rem;
     }
     #email .email__box .email__info p {
-        padding: 1rem 0;
+        padding: 1rem;
         border: none;
     }
     #clientes .clientes__box .clientes__info h3 {
@@ -1184,6 +1195,9 @@ bottom: 0;
     #footer .footer .footer__info {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+    #footer .footer .footer__info li {
+        /* line-height: 2rem; */
     }
     #footer .footer__contacto {
         height: max-content;
