@@ -766,9 +766,10 @@ bottom: 0;
 #clientes .clientes__box .clientes__info h3 {
     font-weight: lighter;
     text-transform: uppercase;
-    font-size: 7rem;
+    font-size: 5rem;
     color: var(--purpura);
-    color: black;
+    margin-top: 4rem;
+    /* color: black; */
 }
 #clientes .clientes__box .clientes__clientes {
     width: 100%;
@@ -914,6 +915,7 @@ bottom: 0;
     #formulario, #clientes {
         height: auto;
         padding: 8rem 0;
+        padding-top: 12rem;
     }
     .recibiras__box .recibiras__tarjeta {
         height: auto;
@@ -1278,6 +1280,9 @@ bottom: 0;
     #formulario .formulario__box form {
         width: 100%;
         padding: 0;
+    }
+    #formulario, #clientes {
+        padding: 8rem 0;
     }
     #footer {
         flex-direction: column;
