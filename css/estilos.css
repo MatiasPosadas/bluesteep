@@ -351,10 +351,12 @@ bottom: 0;
     display: flex;
     align-items: center;
     position: relative;
+    filter: drop-shadow(-47px 48px 17px rgba(0, 0, 0, 0.4));
 }
 .container .hacemos__box .hacemos__tarjeta-2 img {
     width: 120%;
     height: auto;
+
 }
 
 /*- - - - R E C I B I R A S - - - - */
@@ -960,6 +962,7 @@ bottom: 0;
         width: 80%;
         right: -8rem;
         top: 0;
+        filter: drop-shadow(-6px 28px 17px rgba(0, 0, 0, 0.4));
     }
     #adaptable .adaptable__box .adaptable__info .icons{
         margin: 0;
@@ -1091,17 +1094,26 @@ bottom: 0;
         justify-items: start;
     }
     #hacemos {
-        /* background-image: url('../media/img/despegar.png'); */
+        height: auto;
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
         padding: 8rem 0;
     }
+    .container .hacemos__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .container .hacemos__box .hacemos__tarjeta-2{
         display: none;
     }
+    .container .hacemos__box .hacemos__tarjeta-2 img {
+        width: 100%;
+        margin: 0 auto;
+    }
     .container .hacemos__box .hacemos__tarjeta-1 {
-        /* background-color: #0f0606a4; */
         border-radius: 2rem;
         padding: 2rem 0;
     }
