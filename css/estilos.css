@@ -60,9 +60,10 @@ body {
 .cta-b {
     background-color: #fff;
     color: var(--purpura);
-    font-weight: 600;
+    /* font-weight: 600;
     border-bottom: 2px solid var(--purpura-oscuro);
-    border-left: 2px solid #f3f3f3;
+    border-left: 2px solid #f3f3f3; */
+    border: 2px solid var(--purpura);
 }
 .cta-d {
     background: rgb(255,57,103);
