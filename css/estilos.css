@@ -47,24 +47,46 @@ body {
     border-bottom: 2px solid var(--colorado);
     border-left: 2px solid var(--colorado);
     color: var(--blanco);
-    background: rgb(255,57,103);
-    background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
+    letter-spacing: 1px;
 }
 .cta-1 {
     margin-left: 1rem;
+    /* border: 3px solid var(--purpura); */
+    border-bottom: 2px solid var(--purpura);
+    border-left: 2px solid var(--purpura);
+    color: var(--purpura);
+    font-weight: bold;
 }
 .cta-b {
     background-color: #fff;
-    /* color: var(--purpura); */
-    letter-spacing: 2px;
+    color: var(--purpura);
+    font-weight: 600;
+    border-bottom: 2px solid var(--purpura-oscuro);
+    border-left: 2px solid #f3f3f3;
+}
+.cta-d {
+    background: rgb(255,57,103);
+    background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
 }
 /*- - - - - R E S L T A D O - - -  - -*/
 .resaltado {
     color: #fffb00;
 }
+.resaltado-n {
+    color: var(--purpura);
+}
 /*- - - - A B A J  O - - - - */
 .abajo {
     background-color: var(--purpura);
+}
+/*- - - - W A V E - - - - */
+.wave2 {
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -4rem;
+    z-index: 0;
 }
 /*- - - - - H E A D E R - - -  -*/
 header {
@@ -136,6 +158,7 @@ nav a span {
 #presentacion {
     width: 100%;
     height: 100vh;
+    /* padding-bottom: 8rem; */
     background-image: url(../media/img/header-background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -256,9 +279,13 @@ bottom: 0;
 /*- - - - - H A C E M O S - - - -  -*/
 #hacemos {
     background-color: var(--purpura);
+    background-color: var(--blanco);
+    overflow: hidden;
     display: flex;
     align-items: center;
+    position: relative;
 }
+
 .container .hacemos__box {
     width: 95%;
     height: 100%;
@@ -267,6 +294,7 @@ bottom: 0;
     place-content: center;
     margin: 0 auto;
     overflow: hidden;
+    z-index: 1;
 }
 .container .hacemos__box .hacemos__tarjeta-1 {
     width: 95%;
@@ -283,7 +311,7 @@ bottom: 0;
     font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
-    color: var(--blanco);
+    color: var(--negro);
 }
 .hacemos__box .hacemos__tarjeta-1 .hacemos__info {
     width: 90%;
@@ -293,6 +321,8 @@ bottom: 0;
     /* text-align: start; */
     text-align: center;
     color: var(--blanco);
+    color: var(--purpura);
+    font-weight: 500;
     letter-spacing: 0.1rem;
     line-height: 2.7rem;
 }
@@ -343,7 +373,7 @@ bottom: 0;
 .recibiras__box .recibiras__tarjeta {
     width: 80%;
     min-width: 25rem;
-    height: 45rem;
+    /* height: 45rem; */
     margin: 0 auto;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.226);
@@ -372,8 +402,9 @@ bottom: 0;
     margin-top: 2rem;
     padding: 1rem 0;
     color: var(--blanco);
-    background: rgb(255,57,103);
-    background: linear-gradient(3deg, rgba(255,57,103,1) 0%, rgba(252,117,90,1) 100%);
+    background-color: #7142de;
+    /* background: rgb(255,57,103);
+    background: linear-gradient(3deg, rgba(255,57,103,1) 0%, rgba(252,117,90,1) 100%); */
     width: auto;
 }
 .recibiras__box .recibiras__tarjeta p {
@@ -557,11 +588,13 @@ bottom: 0;
 
 /*- - - - - E - M A I L - - - - -*/
 #email {
-    height: 80vh;
-    background-color: var(--purpura);
+    height: auto;
+    padding: 4rem 0;
+    background-color: var(--blanco);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 #email .email__box {
     width: 95%;
@@ -571,6 +604,7 @@ bottom: 0;
     place-content: center;
     place-items: center;
     text-align: center;
+    z-index: 1;
 }
 #email .email__box .email__info {
     width: 100%;
@@ -583,7 +617,7 @@ bottom: 0;
     font-size: 7rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
-    color: var(--blanco);
+    color: var(--purpura);
 }
 #email .email__box .email__info p {
     width: auto;
@@ -609,14 +643,27 @@ bottom: 0;
     width: 100%;
     height: auto;
 }
+#email .wave {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: -1rem;
+    z-index: 0;
+}
 
 /*- - - - F O R M - - - - */
 #formulario {
+    height: auto;
     background-color: var(--purpura);
-    /* background-color: var(--blanco); */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 4rem 0;
+}
+.form {
+    box-shadow: -1px 2px 31px -9px rgba(255,255,255,1);
+    -webkit-box-shadow: -1px 2px 31px -9px rgba(255,255,255,1);
+    -moz-box-shadow: -1px 2px 31px -9px rgba(255,255,255,1);
 }
 #formulario .formulario__box {
     width: 95%;
@@ -631,7 +678,7 @@ bottom: 0;
     max-width: 400px;
     margin: auto;
     border-radius: 1em;
-    padding: 3.5em 1.5em;
+    padding: 1rem;
 }
 #formulario .formulario__box form .form__container {
     width: 100%;
@@ -694,9 +741,15 @@ bottom: 0;
 
 /*- - - - C L I E N T E S - - - - */
 #clientes {
-    height: 80vh;
+    height: auto;
+    padding: 8rem 0;
     background-color: var(--purpura);
+    background-color: var(--blanco);
+    position: relative;
 }
+/* #clientes .wave2 {
+    width: 100%;
+} */
 #clientes .clientes__box {
     width: 95%;
     height: auto;
@@ -749,11 +802,12 @@ bottom: 0;
 
 #footer {
     width: 100%;
-    height: 20vh;
+    height: auto;
     background-color: var(--purpura-oscuro);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0.5rem 0;
 }
 #footer .footer {
     width: 100%;
@@ -823,6 +877,7 @@ bottom: 0;
 #footer .footer__contacto li {
     /* font-weight: bold; */
     font-size: 1.8rem;
+    margin-top: 0.5rem;
 }
 #footer .footer__contacto li > a {
     font-size: 1.8rem;
@@ -844,6 +899,7 @@ bottom: 0;
     }
     #email {
         height: auto;
+        padding: 4rem 0;
     }
     #email .email__box {
         display: flex;
@@ -900,6 +956,12 @@ bottom: 0;
     #hacemos h2 {
         margin: 0;
     }
+    .container .hacemos__box .hacemos__tarjeta-2 {
+        position: absolute;
+        width: 80%;
+        right: -8rem;
+        top: 0;
+    }
     #adaptable .adaptable__box .adaptable__info .icons{
         margin: 0;
     }
@@ -909,9 +971,12 @@ bottom: 0;
     #hosting .hosting__box .hosting__info h2 {
         padding: 2rem 1rem;
     }
-    #formulario {
+    /* #formulario {
     background: rgb(255,57,103);
     background: linear-gradient(3deg, rgba(255,57,103,1) 11%, rgba(252,117,90,1) 100%);
+    } */
+    .form {
+        box-shadow: none;
     }
     #formulario .formulario__box {
         grid-template-columns: 1fr;
@@ -949,6 +1014,9 @@ bottom: 0;
     /* .hamb {
         display: none;
     } */
+    .wave2 {
+        top: -2rem;
+    }
     .logo {
         padding-left: 25px;
     }
@@ -1025,7 +1093,7 @@ bottom: 0;
         justify-items: start;
     }
     #hacemos {
-        background-image: url('../media/img/despegar.png');
+        /* background-image: url('../media/img/despegar.png'); */
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -1057,7 +1125,6 @@ bottom: 0;
     #adaptable .adaptable__box .adaptable__img {
         width: 40%;
     }
-
     #hosting .hosting__box .hosting__info .hosting__data {
         margin: 0 auto;
         max-width: 90%;
@@ -1091,6 +1158,9 @@ bottom: 0;
 @media (max-width:450px) {
     .container {
         /* background-color: rgb(223, 26, 230) !important; */
+    }
+    .wave2 {
+        top: -1rem;
     }
     #presentacion .presentacion__box .container__presentacion {
     padding: 8rem 0 0 2rem;
