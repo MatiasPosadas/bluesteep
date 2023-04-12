@@ -307,24 +307,30 @@ bottom: 0;
 .hacemos__box .hacemos__tarjeta-1 h2 {
     margin-top: 10rem;
     margin-bottom: 2rem;
-    font-family: var(--font-bold);
+    /* font-family: var(--font-bold); */
+    
     font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
+    color: var(--negro);
+    
+    font-weight: lighter;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: var(--purpura);
     color: var(--negro);
 }
 .hacemos__box .hacemos__tarjeta-1 .hacemos__info {
     width: 90%;
 }
 .hacemos__box .hacemos__tarjeta-1 p {
-    padding: 1rem;
-    /* text-align: start; */
     text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
     color: var(--blanco);
+    line-height: 2.5rem;
     color: var(--purpura);
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    line-height: 2.7rem;
 }
 .container .hacemos__box .hacemos__tarjeta-1 .hacemos__cta {
     width: 100%;
@@ -431,6 +437,8 @@ bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+
 }
 
 #adaptable .adaptable__box {
@@ -493,19 +501,8 @@ bottom: 0;
     justify-content: center;
     animation: t1 2s ease infinite;
 }
-/* @keyframes t1 {
-    0% {
-        transform: translate(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(0)
-    }
-} */
 #adaptable .adaptable__box .adaptable__img img {
-    width: 80%;
+    width: 135%;
     height: auto;filter: drop-shadow(37px 88px 5px rgba(0, 0, 0, 0.46));
 }
 
@@ -658,7 +655,7 @@ bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0;
+    padding: 4rem 0 8rem 0;
 }
 .form {
     box-shadow: -1px 2px 31px -9px rgba(255,255,255,1);
@@ -1103,9 +1100,12 @@ bottom: 0;
         display: none;
     }
     .container .hacemos__box .hacemos__tarjeta-1 {
-        background-color: #0f0606a4;
+        /* background-color: #0f0606a4; */
         border-radius: 2rem;
         padding: 2rem 0;
+    }
+    .container .hacemos__box .hacemos__tarjeta-1 h2 {
+        font-weight: lighter;
     }
     #recibiras {
         height: auto;
