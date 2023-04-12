@@ -947,7 +947,7 @@ bottom: 0;
         display: block;
     }
     #hacemos {
-        height: auto;
+        /* height: auto; */
         padding: 3rem 0;
     }
     #hacemos h2 {
