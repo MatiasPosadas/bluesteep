@@ -33,6 +33,10 @@ body {
     width: 100%;
     height: 100vh;
 }
+/*- -- - E N L A C E S - - - - */
+.botones {
+    margin-top: 3rem;
+}
 /*- - - - - C T A - - - - -*/
 .cta {
     text-decoration: none;
