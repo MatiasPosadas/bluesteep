@@ -389,13 +389,19 @@ bottom: 0;
     /* height: 45rem; */
     margin: 0 auto;
     border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.226);
+    background-color: rgba(255, 255, 255, 0.137);
 }
 .recibiras__box .recibiras__tarjeta .recibiras__img {
     width: 20rem;
     height: 20rem;
-    background: rgb(252,117,90);
-    background: linear-gradient(3deg, rgba(252,117,90,1) 0%, rgba(255,255,255,1) 100%);
+    background-color: rgba(0, 0, 0, 0.445);
+    /* background: rgb(252,117,90); */
+    /* background: linear-gradient(3deg, rgba(252,117,90,1) 0%, rgba(255,255,255,1) 100%); */
+    /* background-color: var(--purpura-oscuro); */
+    /* background-color: var(--purpura); */
+    /* background-color: var(--blanco); */
+    /* background: rgb(52,31,102); */
+/* background: linear-gradient(3deg, rgba(52,31,102,1) 20%, rgba(113,66,222,1) 80%); */
 
     margin: 0 auto;
     margin-top: 2rem;
@@ -405,7 +411,7 @@ bottom: 0;
 }
 .recibiras__box .recibiras__tarjeta .recibiras__img img {
     width: auto;
-    height: 120%;
+    height: 100%;
     margin: 0 auto;
 }
 .recibiras__box .recibiras__tarjeta h3 {
