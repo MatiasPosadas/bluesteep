@@ -509,7 +509,7 @@ bottom: 0;
     animation: t1 2s ease infinite;
 }
 #adaptable .adaptable__box .adaptable__img img {
-    width: 135%;
+    width: 100%;
     height: auto;filter: drop-shadow(37px 88px 5px rgba(0, 0, 0, 0.46));
 }
 
