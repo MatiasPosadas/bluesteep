@@ -55,7 +55,6 @@ body {
 }
 .cta-1 {
     margin-left: 1rem;
-    /* border: 3px solid var(--purpura); */
     border-bottom: 2px solid var(--purpura);
     border-left: 2px solid var(--purpura);
     color: var(--purpura);
@@ -64,10 +63,8 @@ body {
 .cta-b {
     background-color: #fff;
     color: var(--purpura);
-    /* font-weight: 600;
-    border-bottom: 2px solid var(--purpura-oscuro);
-    border-left: 2px solid #f3f3f3; */
-    border: 2px solid var(--purpura);
+    border-left: 2 px solid var(--purpura);
+    border-bottom: 2px solid var(--purpura);
 }
 .cta-d {
     background: rgb(255,57,103);
@@ -394,7 +391,7 @@ bottom: 0;
 .recibiras__box .recibiras__tarjeta .recibiras__img {
     width: 20rem;
     height: 20rem;
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: #00000080;
     /* background: rgb(252,117,90); */
     /* background: linear-gradient(3deg, rgba(252,117,90,1) 0%, rgba(255,255,255,1) 100%); */
     /* background-color: var(--purpura-oscuro); */
@@ -421,9 +418,7 @@ bottom: 0;
     margin-top: 2rem;
     padding: 1rem 0;
     color: var(--blanco);
-    background-color: #7142de;
-    /* background: rgb(255,57,103);
-    background: linear-gradient(3deg, rgba(255,57,103,1) 0%, rgba(252,117,90,1) 100%); */
+    background-color: #00000080;
     width: auto;
 }
 .recibiras__box .recibiras__tarjeta p {
