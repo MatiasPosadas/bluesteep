@@ -1019,9 +1019,6 @@ bottom: 0;
         right: 2rem;
         top: 0.5rem;
     }
-    /* .hamb {
-        display: none;
-    } */
     .wave2 {
         top: -2rem;
     }
@@ -1034,8 +1031,8 @@ bottom: 0;
     .ham {
         display: block;
         position: absolute;
-        top: 15px;
-        right: 25px;
+        top: 30px;
+        right: 30px;
         transition: 0.2s 0.1;
     }
     .ham:hover {
@@ -1048,13 +1045,13 @@ bottom: 0;
     background-color: var(--purpura);
     }
     nav .enlaces__menu {
+        height: 150%;
+        width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 100vh;
         margin: 0;
         padding: 0;
-        width: 100%;
         display: none;
         opacity: 0;
     }
@@ -1155,10 +1152,6 @@ bottom: 0;
     #adaptable .adaptable__box .adaptable__img {
         width: 40%;
     }
-    /* #hosting .hosting__box .hosting__info .hosting__data {
-        margin: 0 auto;
-        max-width: 90%;
-    } */
     #hosting .hosting__box .hosting__info h2 {
         font-size: 4rem;
     }

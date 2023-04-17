@@ -10,7 +10,9 @@ ham.addEventListener('click', ()=> {
     barras.forEach(child => {child.classList.toggle('animado')});
     logo.classList.toggle('fuera');
 });
-
+enlaces.addEventListener('click', ()=> {
+    enlaces.classList.toggle('desactivado');
+});
 /*Nav background scroll*/
 
 window.addEventListener("scroll", function(){
