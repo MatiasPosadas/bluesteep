@@ -539,7 +539,7 @@ bottom: 0;
     justify-content: center;
 }
 #hosting .hosting__box .hosting__info {
-    width: 100%;
+    width: 80%;
     height: auto;
     padding-top: 5rem;
 }
@@ -557,6 +557,7 @@ bottom: 0;
     background: linear-gradient(3deg, rgba(255,57,103,1) 0%, rgba(252,117,90,1) 100%);
 }
 #hosting .hosting__box .hosting__info h3 {
+    width: 100%;
     font-size: 2rem;
     font-family: var(--font-bold);
     font-weight: bold;
@@ -567,8 +568,9 @@ bottom: 0;
     color: var(--negro);
 }
 #hosting .hosting__box .hosting__info p{
-    width: 90%;
+    width: 100%;
     color: var(--purpura);
+    color: var(--blanco);
     font-size: 1.8rem;
     font-weight: 600;
     border-radius: 2rem;
@@ -578,18 +580,20 @@ bottom: 0;
     letter-spacing: 0.1rem;
 }
 #hosting .hosting__box .hosting__info .hosting__data {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 1rem 0;
     margin: 0 auto;
     color: var(--blanco);
     background-color: #ffffffc5;
+    background-color: #7142dee3;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
 #hosting .hosting__box .hosting__info .hosting__data h3 {
-    width: 90%;
+    width: 100%;
     color: var(--purpura);
+    color: var(--blanco);
 }
 
 /*- - - - - E - M A I L - - - - -*/
