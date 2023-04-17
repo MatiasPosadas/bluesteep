@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;900&display=swap'); */
 * {
     padding: 0;
     margin: 0;
@@ -104,7 +103,6 @@ nav {
     align-items: center;
     justify-content: space-around;
     min-height: 8vh;
-    /* background-color: var(--purpura-oscuro); */;
     position: fixed;
     top: 0;
     transition: 0.7s ease-in-out;
@@ -160,7 +158,6 @@ nav a span {
 #presentacion {
     width: 100%;
     height: 100vh;
-    /* padding-bottom: 8rem; */
     background-image: url(../media/img/header-background.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -173,7 +170,6 @@ nav a span {
 #presentacion .presentacion__box{
     width: 95%;
     height: 100%;
-    /* background-color: rgba(63, 63, 63, 0.438); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,7 +234,6 @@ nav a span {
     }
 }
 
-
 #presentacion .presentacion__box .container__presentacion h2 {
     color: var(--blanco);
     font-size: 8rem;
@@ -256,14 +251,8 @@ nav a span {
 #presentacion .presentacion__box .container__presentacion p {
     color: var(--blanco);
     margin-top: 1rem;
-    /* padding-right: 2rem; */
     margin-right: 2rem;
 }
-
-
-
-
-
 
 /*----- W A V E ----*/
 #presentacion .wave {
@@ -309,13 +298,10 @@ bottom: 0;
 .hacemos__box .hacemos__tarjeta-1 h2 {
     margin-top: 10rem;
     margin-bottom: 2rem;
-    /* font-family: var(--font-bold); */
-    
     font-size: 3rem;
     text-align: center;
     text-transform: uppercase;
     color: var(--negro);
-    
     font-weight: lighter;
     font-size: 4rem;
     text-transform: uppercase;
@@ -383,7 +369,6 @@ bottom: 0;
 .recibiras__box .recibiras__tarjeta {
     width: 80%;
     min-width: 25rem;
-    /* height: 45rem; */
     margin: 0 auto;
     border-radius: 2rem;
     background-color: rgba(255, 255, 255, 0.137);
@@ -392,14 +377,6 @@ bottom: 0;
     width: 20rem;
     height: 20rem;
     background-color: #00000080;
-    /* background: rgb(252,117,90); */
-    /* background: linear-gradient(3deg, rgba(252,117,90,1) 0%, rgba(255,255,255,1) 100%); */
-    /* background-color: var(--purpura-oscuro); */
-    /* background-color: var(--purpura); */
-    /* background-color: var(--blanco); */
-    /* background: rgb(52,31,102); */
-/* background: linear-gradient(3deg, rgba(52,31,102,1) 20%, rgba(113,66,222,1) 80%); */
-
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 50%;
@@ -700,7 +677,6 @@ bottom: 0;
 #formulario .formulario__box form .form__container .form__title {
     text-align: center;
     text-transform: uppercase;
-    /* font-family: var(--font-bold); */
     font-weight: lighter;
     font-size: 3rem;
     margin-bottom: .4em;
@@ -779,7 +755,6 @@ bottom: 0;
     font-size: 5rem;
     color: var(--purpura);
     margin-top: 4rem;
-    /* color: black; */
 }
 #clientes .clientes__box .clientes__clientes {
     width: 100%;
@@ -810,9 +785,7 @@ bottom: 0;
     letter-spacing: 0.1rem;
     margin: 0 auto;
 }
-
 /*- - - - F O O T E R - - - - */
-
 #footer {
     width: 100%;
     height: auto;
@@ -829,7 +802,6 @@ bottom: 0;
 #footer .footer .footer__info {
     width: 100%;
     height: auto;
-    /* background-color: rgba(27, 16, 124, 0.664); */
     color: var(--blanco);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -850,7 +822,6 @@ bottom: 0;
 #footer .footer .footer__info .footer__redes .footer__red {
     width: 4.5rem;
     height: 4.5rem;
-    /* background-color: red; */
 }
 #footer .footer .footer__info .footer__redes .footer__red-ig {
     background-image: url('../media/img/logo-instagram.png');
@@ -888,7 +859,6 @@ bottom: 0;
     text-decoration: none;
 }
 #footer .footer__contacto li {
-    /* font-weight: bold; */
     font-size: 1.8rem;
     margin-top: 0.5rem;
 }
@@ -902,7 +872,6 @@ bottom: 0;
 #footer .footer__contacto li > a:hover {
     color: var(--amarillo);
 }
-
 
 /*- - - - M E D I A   1 2 0 0 P X   - - - - */
 
@@ -955,7 +924,6 @@ bottom: 0;
     .presentacion__box .container__presentacion {
         padding-bottom: 0;
         margin: auto;
-        /* padding-top: 20%; */
     }
     #presentacion .presentacion__box .container__presentacion {
         padding: 20vh 0 0 5rem;
@@ -1128,7 +1096,6 @@ bottom: 0;
     .container .hacemos__box .hacemos__vmobile{
         width: 100%;
         height: 25rem;
-        /* background-color: red; */
         background-image: url('../media/img/TABLET-WEB.png');
         background-size: cover;
         background-repeat: no-repeat;
@@ -1313,7 +1280,4 @@ bottom: 0;
     #presentacion .presentacion__box .container__presentacion {
         padding: 5rem 0 0 1rem;
     }
-    /* #hosting {
-        height: 123vh;
-    } */
 }
