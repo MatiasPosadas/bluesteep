@@ -1155,10 +1155,10 @@ bottom: 0;
     #adaptable .adaptable__box .adaptable__img {
         width: 40%;
     }
-    #hosting .hosting__box .hosting__info .hosting__data {
+    /* #hosting .hosting__box .hosting__info .hosting__data {
         margin: 0 auto;
         max-width: 90%;
-    }
+    } */
     #hosting .hosting__box .hosting__info h2 {
         font-size: 4rem;
     }
