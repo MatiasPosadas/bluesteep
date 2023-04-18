@@ -1,9 +1,13 @@
 :root {
     --purpura-oscuro: #341f66;
+    --purpura: #7142de;
+}
+nav {
+    background-color: var(--purpura);
 }
 #avisoprivacidad {
     height: 100%;
-    background-color: var(--purpura);
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,15 +23,17 @@
     text-align: center;
 }
 #avisoprivacidad .avisoprivacidad__box .aviso p {
-    color: #fff;
+    color: black;
 }
 #avisoprivacidad .avisoprivacidad__box .aviso h2 {
     margin-bottom: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+    color: var(--purpura);
 }
 #avisoprivacidad span {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: var(--purpura);
+
 }
