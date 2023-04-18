@@ -793,7 +793,9 @@ bottom: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    /* position: absolute;
+    bottom: 0; */
 }
 #footer .footer {
     width: 100%;
@@ -872,6 +874,10 @@ bottom: 0;
 #footer .footer__contacto li > a:hover {
     color: var(--amarillo);
 }
+
+/*- - - A V I S O   P R I V A C I D A D - -- - -*/
+
+
 
 /*- - - - M E D I A   1 2 0 0 P X   - - - - */
 

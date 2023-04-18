@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/avisoprivacidad.css">
+    <title>Bluesteep</title>
+    <script src="https://kit.fontawesome.com/e096e48514.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header" id="inicio">
+        <nav class="nav">
+            <a href="index.html">
+                <img class="logo" src="media/img/logo-blanco.png" alt="logo">
+                <span>Bluesteep</span>
+            </a>
+            <ul class="enlaces__menu">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+            <button class="ham" type="button">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="container" id="avisoprivacidad">
+        <div class="avisoprivacidad__box">
+            <div class="aviso">
+                <h2>Aviso de privacidad integral</h2>
+                <p>Matias Adrian Posadas mejor conocido como www.bluesteep.com, con domicilio en Pucheu 760, Melro, Buenos Aires, Argentina. y portal de internet www.bluesteep.com, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente: <br><br>
+                    <span>¿Para qué fines utilizaremos sus datos personales? </span> <br><br>
+                    Los datos personales que recabamos de usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita:
+                    Respuesta a mensajes del formulario de contacto <br><br>
+                    <span>¿Qué datos personales utilizaremos para estos fines?</span><br> <br>
+                    Para llevar a cabo las finalidades descritas en el presente aviso de privacidad, utilizaremos los siguientes datos personales:
+                    Datos de identificación y contacto
+                    <br><br>
+                    <span>El uso de tecnologías de rastreo en nuestro portal de internet</span> <br><br>
+                    Le informamos que en nuestra página de internet utilizamos cookies, web beacons u otras tecnologías, a través de las cuales es posible monitorear su comportamiento como usuario de internet, así como brindarle un mejor servicio y experiencia al navegar en nuestra página. Los datos personales que obtenemos de estas tecnologías de rastreo son los siguientes:
+                    <br>
+                    Nombre y correo electronico
+                    Estas cookies, web beacons y otras tecnologías pueden ser deshabilitadas. Para conocer cómo hacerlo, consulte el menú de ayuda de su navegador. Tenga en cuenta que, en caso de desactivar las cookies, es posible que no pueda acceder a ciertas funciones personalizadas en nuestros sitio web.<br><br>
+                    <span>¿Cómo puede conocer los cambios en este aviso de privacidad?</span> <br> <br>
+                    El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales; de nuestras propias necesidades por los productos o servicios que ofrecemos; de nuestras prácticas de privacidad; de cambios en nuestro modelo de negocio, o por otras causas. Nos comprometemos a mantener actualizado este aviso de privacidad sobre los cambios que pueda sufrir y siempre podrá consultar las actualizaciones que existan en el sitio web www.bluesteep.com.
+                    Última actualización de este aviso de privacidad: 17/04/2023
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="footer">
+        <footer class="footer">
+            <div class="footer__info">
+                <ul class="footer__redes">
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com/bluesteep/">
+                        <li class="footer__red footer__red-ig"></li>
+                    </a>
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com/bluesteep/">
+                        <li class="footer__red footer__red-fb"></li>
+                    </a>
+                </ul>
+                <ul class="footer__contacto">
+                    <li><a target="_blank" rel="noopener" href="https://wa.link/0ulocy">Telefono: +54 (011) 3798-1501</a></li>
+                    <li>Correo: correo@bluesteep.com</li>
+                    <li><i class="fa-sharp fa-regular fa-copyright"></i> BLUESTEEP 2023</li>
+                    <li></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+
+            //smoth scroll
+
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+});
+</script>
+</body>
+</html>

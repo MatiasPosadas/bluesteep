@@ -1,0 +1,33 @@
+:root {
+    --purpura-oscuro: #341f66;
+}
+#avisoprivacidad {
+    height: 100%;
+    background-color: var(--purpura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#avisoprivacidad .avisoprivacidad__box {
+    width: 80%;
+    height: auto;
+    padding: 12rem 0;
+}
+#avisoprivacidad .avisoprivacidad__box .aviso {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#avisoprivacidad .avisoprivacidad__box .aviso p {
+    color: #fff;
+}
+#avisoprivacidad .avisoprivacidad__box .aviso h2 {
+    margin-bottom: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#avisoprivacidad span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
