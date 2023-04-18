@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     background-color: #888787;
+    position: relative;
 }
 :root {
     --font-comun:'Kanit', sans-serif;
@@ -88,6 +89,21 @@ body {
     position: absolute;
     top: -4rem;
     z-index: 0;
+}
+/*----BOTON WSP ----*/
+.btn-wsp {
+    width: 5rem;
+    height: 5rem;
+    /* background-color: red; */
+    background-image: url('../media/img/logo-wsp.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: none;
+    position: fixed;
+    left: 1rem;
+    bottom: 5rem;
+    border-radius: 100%;
 }
 /*- - - - - H E A D E R - - -  -*/
 header {
