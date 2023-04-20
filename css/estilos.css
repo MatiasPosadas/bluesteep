@@ -101,8 +101,8 @@ body {
     background-repeat: no-repeat;
     border: none;
     position: fixed;
-    left: 1rem;
-    bottom: 5rem;
+    left: 2rem;
+    bottom: 7rem;
     border-radius: 100%;
 }
 /*- - - - - H E A D E R - - -  -*/
@@ -1244,7 +1244,7 @@ bottom: 0;
     }
     #hosting .hosting__box .hosting__info h2 {
         font-size: 3rem;
-        padding: 0.5rem;
+        padding: 0.7rem;
     }
     #clientes .clientes__box .clientes__clientes .cliente {
         width: 90%;
