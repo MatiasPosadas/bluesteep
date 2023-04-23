@@ -1021,7 +1021,8 @@ bottom: 0;
     .ham {
         display: block;
         position: absolute;
-        top: 30px;
+        top: 0;
+        transform: translateY(50%);
         right: 30px;
         transition: 0.2s 0.1;
     }
